@@ -12,7 +12,7 @@ script:
   # Use Sphinx to make the html docs
   - cd docs
   - make html
-  - cp -r _build/html/* ../../
+  - cp -r _build/html/* ./
     
 # Tell Travis CI to copy the documentation to the gh-pages branch of
 # your GitHub repository.
