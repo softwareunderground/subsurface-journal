@@ -1,4 +1,4 @@
-language: python
+nguage: python
 
 python:
   - 3.6
@@ -12,7 +12,7 @@ script:
   # Use Sphinx to make the html docs
   - cd docs
   - make html
-
+    
 # Tell Travis CI to copy the documentation to the gh-pages branch of
 # your GitHub repository.
 deploy:
@@ -21,6 +21,5 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   target-branch: master
-  local-dir: ../
   on:
     branch: master
