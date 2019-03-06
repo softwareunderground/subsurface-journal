@@ -1,5 +1,8 @@
 language: python
 
+python:
+  - 3.6
+
 install:
   - pip install sphinx
   - pip install sphinx_rtd_theme
@@ -16,7 +19,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  local_dir: docs/_build/html/
   keep-history: true
   on:
     branch: master
