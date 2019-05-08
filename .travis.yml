@@ -7,13 +7,16 @@ install:
   - pip install sphinx
   - pip install sphinx_rtd_theme
   - pip install numpydoc
+  - pip install jupyter jupyter_client nbconvert nbval
 
 script:
   # Use Sphinx to make the html docs
   - cd docs
   - make html
   - touch _build/html/.nojekyll
-    
+  # roughtly execute every jupyter notebook we fine
+  - find . -name requirements.txt|xargs cat|xargs pip install -U 
+  - find . -name "*.ipynb" |xargs jupyter nbconvert --to notebook --execute 
 # Tell Travis CI to copy the documentation to the gh-pages branch of
 # your GitHub repository.
 deploy:
