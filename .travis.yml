@@ -15,6 +15,7 @@ script:
   - make html
   - touch _build/html/.nojekyll
   # execute and validate every jupyter notebook we find
+  - cd ../
   - bash scripts/execute_notebooks.sh
 
 # Tell Travis CI to copy the documentation to the gh-pages branch of
