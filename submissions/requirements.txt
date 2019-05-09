@@ -1,0 +1,4 @@
+fenics
+mshr
+numpy
+matplotlib
