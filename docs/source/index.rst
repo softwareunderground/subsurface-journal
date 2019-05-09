@@ -26,6 +26,7 @@ see these two web sites:
 
     introduction
     scope
+    contribution
     reviewing
     infrastructure
     installation
