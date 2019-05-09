@@ -7,6 +7,7 @@ install:
   - pip install sphinx
   - pip install sphinx_rtd_theme
   - pip install numpydoc
+  - pip install jsonschema attrs --upgrade
   - pip install pytest jupyter jupyter_client nbconvert nbval
 
 script:
