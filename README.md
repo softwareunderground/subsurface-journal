@@ -1,4 +1,4 @@
-# The Subsurface - A Reproducible Journal
+# The Subsurface - An Executable Journal
 
 > This is the place where research scientists, researchers in industry, software
 developers, and data scientists can  communicate there novel solutions for problems in
